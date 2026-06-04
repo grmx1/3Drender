@@ -18,7 +18,9 @@ struct object_3D{
 	float w, h, d;
 
 	int points_size;
+	int show_axis;
 	struct point_3D points[8];
+	struct point_3D axis[4];
 };
 
 //create

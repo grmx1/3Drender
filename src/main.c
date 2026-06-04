@@ -14,7 +14,7 @@ int main(){
 	SDL_Renderer* renderer = NULL;
 
 	int test = 0;
-	int pollingRate = 500;
+	int pollingRate = 100;
 	double period = 1.00 / (double)pollingRate;
 
 	SDL_Init(SDL_INIT_EVERYTHING);
@@ -47,6 +47,8 @@ int main(){
 		}
 
 		rotate_y(&main_obj, 0.01);
+		rotate_x(&main_obj, 0.01);
+		rotate_z(&main_obj, 0.01);
 		project_object(&main_obj, RES[0], RES[1]);
 
 		//clear screen
